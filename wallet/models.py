@@ -91,7 +91,7 @@ class Notification(models.Model):
 
 class Loan(models.Model):
     Interest=models.IntegerField()
-    Loan_type=models.CharField(max_length=15)
+    loan_type=models.CharField(max_length=15)
     amount=models.IntegerField()
     wallet=models.ForeignKey('Wallet', on_delete=models.CASCADE,related_name='Loan_wallet')
     Due_date=models.DateField()
@@ -105,6 +105,6 @@ class Loan(models.Model):
 
 class Reward(models.Model):
     Points=models.PositiveIntegerField()
-    walleT=models.ForeignKey('Wallet',on_delete=models.CASCADE, related_name='Reward_wallet')
+    wallet=models.ForeignKey('Wallet',on_delete=models.CASCADE, related_name='Reward_wallet')
     date_time_received=models.DateTimeField()
-    transactin=models.ForeignKey('Transaction',on_delete=models.CASCADE,related_name='Reward_transaction')
+    transaction=models.ForeignKey('Transaction',on_delete=models.CASCADE,related_name='Reward_transaction')
