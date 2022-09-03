@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <body>
+
+            <h2>Customer Registration</h2>
+            <form method="POST" class="registration_form"> 
+                {% csrf_token%}
+                {{form.as_p}}
+
+                <button type="submit" class="submit_btn",> Register</button>
+
+            </form>
+
+        </body>
+    </head>
+</html>
+
+
+
+
+
+<!-- <h2>Customer Registration</h2>
+<form method="POST" class="registration_form"> {% csrf_token%}
+    {{forms.as_p}}
+
+    <button type="submit" class="submit-btn">  register </button>
+</form> -->
