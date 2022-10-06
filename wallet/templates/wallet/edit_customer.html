@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <body>
+
+            <h2>Edit Customer</h2>
+            <form method="POST" class="registration_form"> 
+                {% csrf_token%}
+                {{form.as_tabel}}
+
+                <button type="submit"> save</button> 
+
+            </form>
+
+        </body>
+    </head>
+</html>
