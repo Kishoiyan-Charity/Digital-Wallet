@@ -1,4 +1,4 @@
-##Digital Wallet Application
+*Digital Wallet Application
 Overview
 This Digital Wallet application is built with Django and Python, allowing users to securely manage their finances by storing, sending, and receiving funds. Users can link bank accounts, add cards, view transaction history, and monitor their balance—all through a simple and intuitive web interface.
 
