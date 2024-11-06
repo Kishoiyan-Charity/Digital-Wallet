@@ -21,4 +21,24 @@ This Digital Wallet application is built with **Django** and **Python**, allowin
 ## Clone the Repository:
 - git clone https://github.com/Kishoiyan-Charity/Digital-Wallet.git
    cd Digital-Wallet
+
+  ## Create a Virtual Environment:
+- python -m venv venv
+- source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+  ## Install Dependencies:
+- pip install -r requirements.txt
+
+## Run Migrations:
+- python manage.py migrate
+
+## Create a Superuser (for admin access):
+- python manage.py createsuperuser
+
+## Start the Development Server:
+- python manage.py runserver
+
+
+
+
   
